@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pricing cards: Monthly / Yearly</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="wrap" aria-labelledby="pricing-title">
+  <h2 id="pricing-title">Pick the plan that fits your team</h2>
+  <p class="lede">Sample pricing for the fictional product Tidepool. Switch to yearly billing to pay less.</p>
+
+  <div class="toggle" role="group" aria-label="Billing cycle">
+    <button type="button" data-cycle="monthly" aria-pressed="true">Monthly</button>
+    <button type="button" data-cycle="yearly" aria-pressed="false">Yearly</button>
+  </div>
+
+  <div class="grid">
+    <article class="card">
+      <h3>Starter</h3>
+      <p class="blurb">For one person trying things out.</p>
+      <div class="price"><span class="amount" data-monthly="9" data-yearly="90">$9</span><span class="period">per month</span></div>
+      <p class="note"></p>
+      <ul><li>1 project</li><li>5 GB storage</li><li>Email support</li></ul>
+      <button type="button" class="cta">Start with Starter</button>
+    </article>
+
+    <article class="card popular">
+      <span class="ribbon">Popular</span>
+      <h3>Team</h3>
+      <p class="blurb">For small teams that ship every week.</p>
+      <div class="price"><span class="amount" data-monthly="24" data-yearly="240">$24</span><span class="period">per month</span></div>
+      <p class="note"></p>
+      <ul><li>Unlimited projects</li><li>100 GB storage</li><li>Shared workspaces</li><li>Priority email support</li></ul>
+      <button type="button" class="cta">Choose Team</button>
+    </article>
+
+    <article class="card">
+      <span class="ribbon">Best Value</span>
+      <h3>Scale</h3>
+      <p class="blurb">For companies with many teams.</p>
+      <div class="price"><span class="amount" data-monthly="59" data-yearly="590">$59</span><span class="period">per month</span></div>
+      <p class="note"></p>
+      <ul><li>Everything in Team</li><li>1 TB storage</li><li>Single sign-on</li><li>Live chat support</li></ul>
+      <button type="button" class="cta">Choose Scale</button>
+    </article>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
